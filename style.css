@@ -14,7 +14,7 @@ body {
 	font-size: 1.6rem;
 	font-weight: 400;
 	line-height: 1.5;
-	background-color: rgb(100, 133, 155);
+	background-color: #2C3E50;
 }
 
 a {
@@ -181,13 +181,14 @@ header .overlay{
 	
 }
 
-
+ 
 /* About */
 #About{
 	height: 600px;
-	padding-top: 10rem;
+	padding-top: 2rem;
 	padding-bottom: 10rem;
 	text-align: center;
+	background-image: url(./img/1.jpg );
 }
 
 #About h2{
@@ -198,12 +199,106 @@ header .overlay{
 .line-dark{
 	border: none;
 	border-top: .4rem solid;
-	max-width: 25rem;
+	max-width: 65rem;
 	margin: 2.5rem auto;
+	overflow: auto;
 	height: 0;
+	color: rgba(255, 250, 250, 0.651);
 }
 
 .line-dark::after{
 	content:"\f79f";
 	font-family: "Font Awesome 5 Free";
+	color: rgb(72, 93, 150);
+	font-weight: 900;
+	font-size: 3.2rem;
+	position: relative;
+
+}
+
+.tilesWrap {
+	padding: 0;
+	margin: 50px auto;
+	list-style: none;
+	text-align: center;
+}
+.tilesWrap li {
+	display: inline-block;
+	width: 20%;
+	min-width: 200px;
+	max-width: 230px;
+	padding: 80px 20px 40px;
+	position: relative;
+	vertical-align: top;
+	margin: 10px;
+	font-family: 'helvetica', san-serif;
+	min-height: 25vh;
+	background: #262a2b;
+	border: 1px solid #252727;
+	text-align: left;
+}
+.tilesWrap li h2 {
+	font-size: 114px;
+	margin: 0;
+	position: absolute;
+	opacity: 0.2;
+	top: 50px;
+	right: 10px;
+	transition: all 0.3s ease-in-out;
+}
+.tilesWrap li h3 {
+	font-size: 20px;
+	color: #b7b7b7;
+	margin-bottom: 5px;
+}
+.tilesWrap li p {
+	font-size: 16px;
+	line-height: 18px;
+	color: #b7b7b7;
+	margin-top: 5px;
+}
+.tilesWrap li:hover h2 {
+	top: 0px;
+	opacity: 0.6;
+}
+
+.tilesWrap li:before {
+	content: '';
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	right: -2px;
+	bottom: -2px;
+	z-index: -1;
+	background: #fff;
+	transform: skew(2deg, 2deg);
+}
+.tilesWrap li:after {
+	content: '';
+	position: absolute;
+	width: 40%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: rgba(255, 255, 255, 0.02);
+}
+.tilesWrap li:nth-child(1):before {
+	background: #c9ffbf57;
+background: -webkit-linear-gradient(to right, #ffafbcea, #c9ffbfd0);
+background: linear-gradient(to right, #FFAFBD, #C9FFBF);
+}
+.tilesWrap li:nth-child(2):before {
+	background: #995b70;
+background: -webkit-linear-gradient(to right, #b44523a9, #f2709b86);
+background: linear-gradient(to right, #884530ad, #f2709bdc);
+}
+.tilesWrap li:nth-child(3):before {
+	background: #a1564d;
+background: -webkit-linear-gradient(to right, #ffc400b6, #c213001a);
+background: linear-gradient(to right, #ffc40052, #c2130070);
+}
+.tilesWrap li:nth-child(4):before {
+	background: #da9ea5;
+background: -webkit-linear-gradient(to right, #0abfbc6e, #fc354c52);
+background: linear-gradient(to right, #0abfbc62, #fc354c4d);
 }
