@@ -1,0 +1,209 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 10px;
+}
+
+body {
+	height: 900px;
+	font-family: 'Lato', sans-serif;
+	font-size: 1.6rem;
+	font-weight: 400;
+	line-height: 1.5;
+	background-color: rgb(100, 133, 155);
+}
+
+a {
+	text-decoration: none;
+}
+
+ul{
+  list-style-type: none;
+  text-align: center;
+}
+
+h1 {
+	font-family: 'Long Cang', cursive;
+	font-size: 80px;
+	margin-bottom: 30px;
+}
+
+h3, p {
+	font-family: 'Open Sans', sans-serif;
+	margin-bottom: 30px;
+}
+
+
+/* BUTTONS */ /*
+.btn {
+	
+	margin-top:4rem; 	
+	font-weight: 400;
+	display: inline-block;
+	border:2px solid transparent;
+	border-radius: .3rem;
+	cursor: pointer;
+	transition: all .5s;
+}
+
+.btn-social {
+	width: 5rem;
+	height: 5rem;
+	border-radius: 50%;
+	font-size: 2rem;
+	line-height: 2rem;
+}
+
+
+.btn-outline {	
+	color:#fff;
+	border-color: #fff;	
+	background-color: transparent;
+}
+
+.btn-outline:hover {
+	color: #212529;
+	background-color: #fff;	
+}
+*/
+button {
+	border: none;
+	outline: none;
+	padding: 10px 20px;
+	border-radius: 50px;
+	color: #333;
+	background: #fff;
+	margin-bottom: 50px;
+	box-shadow: 0 3px 20px 0 #0000003b;
+}
+button:hover{
+	cursor: pointer;
+}
+
+.clearfix::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.container {
+	width: 1140px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: .5rem;
+	padding-right: .5rem;
+	
+}
+
+.text-uppercase {
+	text-transform: uppercase;
+  
+}
+
+
+/*navbar*/
+
+nav {
+	
+	text-align: right;
+  	width: 100%;
+	font-family: 'Lato', sans-serif;
+	background-color: #2C3E50;
+	color: #fff;
+	padding-top: 2.0rem;
+	padding-bottom: 2.0rem;
+	position:fixed; z-index:2;
+}
+
+#logo-box{
+  float: left;
+  padding-top: .5rem;
+  font-family: 'Long Cang', cursive;
+  font-size: 3.2rem;
+}
+
+#logo-box .logo {
+	color: rgb(241, 240, 247);
+	font-weight: 700;
+	font-size: 3.2rem;
+}
+
+
+#nav-links {
+	float: right;
+	text-align: center;
+}
+
+#nav-links .nav-item {
+	float: right;
+	margin: .2rem;
+}
+
+#nav-links .nav-link {
+	color: #fff;
+	font-size: 1.6rem;
+	font-weight: 700;
+	display: block;
+	padding: 1.6rem;
+	letter-spacing: .2rem;
+	transition: color .3s;
+}
+
+#nav-links .nav-link:hover {
+	color: #189bbc;
+}
+
+/* HEADER */
+header{
+	background: url(https://scontent.fada2-2.fna.fbcdn.net/v/t31.0-8/18216458_1544911698875706_8690540763916425087_o.jpg?_nc_cat=108&ccb=3&_nc_sid=2d5d41&_nc_ohc=zzfbEeBlY7oAX_PaTQp&_nc_ht=scontent.fada2-2.fna&oh=d8c0f7fcbe4d23d0a26c65c64c32b3ca&oe=6052AC64);
+	width: 100%;
+	height: 700px;
+	padding-top: calc(102px + 3rem);
+	padding-bottom: 112px;
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+	overflow: hidden;
+/*	border-radius: 0 0 85% 85% / 30%; */
+	text-align: right;
+}
+header .overlay{
+	width: 100%;
+	height: 100%;
+	padding: 50px;
+	color: #FFF;
+	text-shadow: 1px 1px 1px #333;
+ /* background-image: linear-gradient( 135deg, #9f05ff69 10%, #fd5e086b 100%); */
+	
+}
+
+
+/* About */
+#About{
+	height: 600px;
+	padding-top: 10rem;
+	padding-bottom: 10rem;
+	text-align: center;
+}
+
+#About h2{
+	font-size: 4.8rem;
+	color: #2C3E50;
+}
+
+.line-dark{
+	border: none;
+	border-top: .4rem solid;
+	max-width: 25rem;
+	margin: 2.5rem auto;
+	height: 0;
+}
+
+.line-dark::after{
+	content:"\f79f";
+	font-family: "Font Awesome 5 Free";
+}
