@@ -19,6 +19,7 @@ body {
 
 a {
 	text-decoration: none;
+	color:#2C3E50;
 }
 
 ul{
@@ -30,6 +31,7 @@ h1 {
 	font-family: 'Long Cang', cursive;
 	font-size: 80px;
 	margin-bottom: 30px;
+
 }
 
 h3, p {
@@ -37,8 +39,60 @@ h3, p {
 	margin-bottom: 30px;
 }
 
-
-/* BUTTONS */ /*
+.social-bar{
+  position: fixed;
+  width: 60px;
+  margin-top: 100px;
+  transition: all 0.3s linear;
+  box-shadow: 2px 2px 8px 0px rgba(0,0,0,.4);
+}
+.social-bar li{
+	height: 60px;
+	position:relative;
+  }
+  .social-bar li a{
+	color: white;
+	display: block;
+	height: 100%;
+	width: 100%;
+	line-height: 60px;
+	padding-left:25%;
+	border-bottom: 1px solid rgba(0,0,0,.4);
+	transition: all .3s linear;
+  }
+  .social-bar li:nth-child(1) a{
+	background: #792f2f38;
+  }
+  .social-bar li:nth-child(2) a{
+	background: #792f2f38;
+  }
+  .social-bar li:nth-child(3) a{
+	background: #792f2f38;
+  }
+ 
+  .social-bar li a i{
+	position:absolute;
+	top: 17px;
+	left: 20px;
+	font-size: 27px;
+  }
+  .social-bar ul li a span{
+	display: none;
+	font-weight: bold;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+  }
+  .social-bar a:hover {
+	z-index:1;
+	width: 200px;
+	border-bottom: 1px solid rgba(0,0,0,.5);
+	box-shadow: 0 0 1px 1px rgba(0,0,0,.3);
+  }
+  .social-bar ul li:hover a span{
+	padding-left: 30%;
+	display: block;
+  }
+  
 .btn {
 	
 	margin-top:4rem; 	
@@ -57,8 +111,6 @@ h3, p {
 	font-size: 2rem;
 	line-height: 2rem;
 }
-
-
 .btn-outline {	
 	color:#fff;
 	border-color: #fff;	
@@ -68,20 +120,6 @@ h3, p {
 .btn-outline:hover {
 	color: #212529;
 	background-color: #fff;	
-}
-*/
-button {
-	border: none;
-	outline: none;
-	padding: 10px 20px;
-	border-radius: 50px;
-	color: #333;
-	background: #fff;
-	margin-bottom: 50px;
-	box-shadow: 0 3px 20px 0 #0000003b;
-}
-button:hover{
-	cursor: pointer;
 }
 
 .clearfix::after {
@@ -161,7 +199,7 @@ nav {
 header{
 	background: url(https://scontent.fada2-2.fna.fbcdn.net/v/t31.0-8/18216458_1544911698875706_8690540763916425087_o.jpg?_nc_cat=108&ccb=3&_nc_sid=2d5d41&_nc_ohc=zzfbEeBlY7oAX_PaTQp&_nc_ht=scontent.fada2-2.fna&oh=d8c0f7fcbe4d23d0a26c65c64c32b3ca&oe=6052AC64);
 	width: 100%;
-	height: 700px;
+	height: 800px;
 	padding-top: calc(102px + 3rem);
 	padding-bottom: 112px;
 	background-size: cover;
@@ -184,15 +222,22 @@ header .overlay{
  
 /* About */
 #About{
-	height: 600px;
+	height: 700px;
 	padding-top: 2rem;
 	padding-bottom: 10rem;
 	text-align: center;
-	background-image: url(./img/1.jpg );
+	background-image: url(./img/5.jpg);
+	background-position: center;
+	background-size: cover;
+	
+}
+#About h1{
+	color:rgb(255, 255, 255);
+	font-family: 'Lato', sans-serif;
 }
 
 #About h2{
-	font-size: 4.8rem;
+	font-size: 3.8rem;
 	color: #2C3E50;
 }
 
@@ -302,3 +347,77 @@ background: linear-gradient(to right, #ffc40052, #c2130070);
 background: -webkit-linear-gradient(to right, #0abfbc6e, #fc354c52);
 background: linear-gradient(to right, #0abfbc62, #fc354c4d);
 }
+
+/*Şubeler */
+
+.location{
+	height: 700px;
+	padding-top: 2rem;
+	padding-bottom: 10rem;
+	text-align: center;
+	background-image: url(./img/12.jpg);
+	background-position: center;
+	background-size: cover;
+	
+}
+.location h1{
+	color: rgb(253, 249, 249);
+	font-family: 'Lato', sans-serif;
+}
+.location h2{
+	font-size: 3.8rem;
+	color: #2C3E50;
+}
+
+.adres {
+	padding: 0;
+	margin: 50px auto;
+	list-style: none;
+	text-align: center;
+}
+
+.adres li {
+	display: inline-block;
+	width: 20%;
+	min-width: 400px;
+	max-width: 230px;
+	padding: 50px 20px 60px;
+	position: relative;
+	vertical-align: top;
+	margin: 5px;
+	font-family: 'helvetica', san-serif;
+	min-height: 25vh;
+	background: #e2d3d3;
+	border: 4px cornsilk #dbadb8;
+	text-align:center;
+}
+ 
+/* Footer */
+footer {
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+	background-color: #2C3E50;
+	color: #fff;
+	text-align: center;
+}
+
+footer h4 {
+	font-size: 2rem;
+}
+
+footer p {
+	font-size: 1.5rem;
+	margin-top: 0.5rem;
+}
+
+footer li {
+	display: inline-block;
+	margin-right: 1rem;
+}
+.col {
+	float: left;
+	width: 30.33333%;	
+	min-width: 300px;
+	padding: 15px;
+}
+ 
